@@ -66,7 +66,7 @@ class DiagGaussianActor(nn.Module):
                                hidden_depth)
 
         self.outputs = dict()
-        self.apply(utils.weight_init)
+        #self.apply(utils.weight_init)
 
     def forward(self, obs):
         mu, log_std = self.trunk(obs).chunk(2, dim=-1)

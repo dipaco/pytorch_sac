@@ -9,8 +9,6 @@ from collections import deque
 import random
 import math
 
-import dmc2gym
-
 
 def make_env(cfg):
     """Helper function to create dm_control environment"""
